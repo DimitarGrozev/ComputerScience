@@ -1,0 +1,2027 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        .wikitable {
+            background-color: #f8f9fa;
+            color: #202122;
+            margin: 1em 0;
+            border: 1px solid #a2a9b1;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        tr,
+        td {
+            border: 1px solid #a2a9b1 !important;
+            border-collapse: collapse;
+        }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="types.css">
+    <title>Рутиране</title>
+</head>
+
+<body>
+    <nav id="navigationBar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">VPN</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Начало <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Услуги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="security.html">Сигурност</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                    <label id="toggleLabel" class="custom-control-label" style="color: white;"
+                        for="customSwitch1">Toggle light mode</label>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-dark">
+                        <h5 style="color:white">
+                            Поверителност</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Списание PC препоръчва на потребителите да обмислят избора на доставчик,
+                            базиран в страна, в която няма закони за запазване на данни, тъй като това улеснява услугата
+                            да спазва обещанието да не се регистрира. PC Magazine и TechRadar също така препоръчват
+                            на потребителите да прочетат политиката за регистриране на доставчика, преди да се
+                            регистрират за услугата, тъй като някои доставчици събират информация за използването
+                            на VPN от своите клиенти. PC World препоръчва на потребителите да избягват безплатни
+                            услуги като правило и твърди, че безплатните услуги или продават данните за сърфиране на
+                            своите потребители в обобщена форма на изследователи и търговци, или предлагат само
+                            минимално количество пренос на данни на месец. Logitheque обяснява защо в мрежата има
+                            толкова много уебсайтове за сравнение на VPN.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container md-5">
+        <div class="row">
+            <div class="col-12">
+                <table class="wikitable sortable jquery-tablesorter"
+                    style="text-align: center; font-size: 80%; width: auto; table-layout: fixed;">
+                    <thead>
+                        <tr>
+                            <th rowspan="2" class="headerSort" tabindex="0" role="columnheader button"
+                                title="Sort ascending">
+                                Service
+                            </th>
+                            <th colspan="1" rowspan="2" scope="col" class="headerSort" tabindex="0"
+                                role="columnheader button" title="Sort ascending"><a href="#Based_in">Based in</a>
+                            </th>
+                            <th colspan="5" scope="col" class="unsortable"><a href="#Logging">Logging</a><sup
+                                    id="cite_ref-20" class="reference"><a href="#cite_note-20">[a]</a></sup>
+                            </th>
+                            <th rowspan="2" class="headerSort" tabindex="0" role="columnheader button"
+                                title="Sort ascending"><a href="#Anonymous_payment_method">Anonymous payment method</a>
+                            </th>
+                            <th rowspan="2" class="headerSort" tabindex="0" role="columnheader button"
+                                title="Sort ascending"><a href="#Accepts_bitcoin">Accepts bitcoin</a>
+                            </th>
+                            <th rowspan="2" class="headerSort" tabindex="0" role="columnheader button"
+                                title="Sort ascending"><a href="#PGP_key_available">PGP key available</a>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending"><a
+                                    href="#Traffic">Traffic</a>
+                            </th>
+                            <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending"><a
+                                    href="#DNS_requests">DNS requests</a>
+                            </th>
+                            <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending"><a
+                                    href="#Timestamps">Timestamps</a>
+                            </th>
+                            <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending"><a
+                                    href="#Bandwidth">Bandwidth</a>
+                            </th>
+                            <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending"><a
+                                    href="#IP_address">IP address</a>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <th><a href="/wiki/Avira" title="Avira">Avira Phantom VPN</a>
+                            </th>
+                            <td><a href="/wiki/Germany" title="Germany">Germany</a>
+                            </td>
+                            <td style="background: #FFD; color: black; vertical-align: middle; text-align: center;"
+                                class="partial table-partial">No<sup id="cite_ref-avira-logs_23-0" class="reference"><a
+                                        href="#cite_note-avira-logs-23">[b]</a></sup>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">
+                                Yes<sup id="cite_ref-avira-logs_23-1" class="reference"><a
+                                        href="#cite_note-avira-logs-23">[b]</a></sup>
+                            </td>
+                            <td style="background: #FFD; color: black; vertical-align: middle; text-align: center;"
+                                class="partial table-partial">No<sup id="cite_ref-avira-logs_23-2" class="reference"><a
+                                        href="#cite_note-avira-logs-23">[b]</a></sup>
+                            </td>
+                            <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                            </td>
+                            <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                            </td>
+                            <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><a href="/wiki/BlackVPN" title="BlackVPN">blackVPN</a>
+                            </th>
+                            <td><a href="/wiki/Hong_Kong" title="Hong Kong">Hong Kong</a>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-blackvpn-tos_24-0" class="reference"><a
+                                        href="#cite_note-blackvpn-tos-24">[22]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-blackvpn-tos_24-1" class="reference"><a
+                                        href="#cite_note-blackvpn-tos-24">[22]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-blackvpn-tos_24-2" class="reference"><a
+                                        href="#cite_note-blackvpn-tos-24">[22]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-blackvpn-tos_24-3" class="reference"><a
+                                        href="#cite_note-blackvpn-tos-24">[22]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-blackvpn-tos_24-4" class="reference"><a
+                                        href="#cite_note-blackvpn-tos-24">[22]</a></sup>
+                            </td>
+                            <td style="background: #FFD; color: black; vertical-align: middle; text-align: center;"
+                                class="partial table-partial">Email
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                Yes<sup id="cite_ref-blackvpn-bitcoin_25-0" class="reference"><a
+                                        href="#cite_note-blackvpn-bitcoin-25">[23]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                Yes<sup id="cite_ref-blackvpn-pgp_26-0" class="reference"><a
+                                        href="#cite_note-blackvpn-pgp-26">[24]</a></sup>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><a href="/wiki/ExpressVPN" title="ExpressVPN">ExpressVPN</a>
+                            </th>
+                            <td><a href="/wiki/British_Virgin_Islands" title="British Virgin Islands">British Virgin
+                                    Islands</a><sup id="cite_ref-pcmag-expvpn-review_27-0" class="reference"><a
+                                        href="#cite_note-pcmag-expvpn-review-27">[25]</a></sup><sup
+                                    id="cite_ref-techradar-expvpn_28-0" class="reference"><a
+                                        href="#cite_note-techradar-expvpn-28">[26]</a></sup><sup
+                                    id="cite_ref-pcworld-expvpn-review_29-0" class="reference"><a
+                                        href="#cite_note-pcworld-expvpn-review-29">[27]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-expressvpn-privacypolicy-logging1_30-0" class="reference"><a
+                                        href="#cite_note-expressvpn-privacypolicy-logging1-30">[28]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-expressvpn-privacypolicy-logging1_30-1" class="reference"><a
+                                        href="#cite_note-expressvpn-privacypolicy-logging1-30">[28]</a></sup>
+                            </td>
+                            <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">
+                                Yes<sup id="cite_ref-expressvpn-privacypolicy-timestamp_31-0" class="reference"><a
+                                        href="#cite_note-expressvpn-privacypolicy-timestamp-31">[29]</a></sup>
+                            </td>
+                            <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">
+                                Yes<sup id="cite_ref-expressvpn-privacypolicy-bandwidth_32-0" class="reference"><a
+                                        href="#cite_note-expressvpn-privacypolicy-bandwidth-32">[30]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-expressvpn-privacypolicy-logging1_30-2" class="reference"><a
+                                        href="#cite_note-expressvpn-privacypolicy-logging1-30">[28]</a></sup>
+                            </td>
+                            <td style="background: #FFD; color: black; vertical-align: middle; text-align: center;"
+                                class="partial table-partial">Email<sup id="cite_ref-pcworld-expvpn-review_29-1"
+                                    class="reference"><a href="#cite_note-pcworld-expvpn-review-29">[27]</a></sup><sup
+                                    id="cite_ref-techradar-expvpn_28-1" class="reference"><a
+                                        href="#cite_note-techradar-expvpn-28">[26]</a></sup><sup
+                                    id="cite_ref-expressvpn-email_33-0" class="reference"><a
+                                        href="#cite_note-expressvpn-email-33">[31]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                Yes<sup id="cite_ref-pcworld-expvpn-review_29-2" class="reference"><a
+                                        href="#cite_note-pcworld-expvpn-review-29">[27]</a></sup><sup
+                                    id="cite_ref-techradar-expvpn_28-2" class="reference"><a
+                                        href="#cite_note-techradar-expvpn-28">[26]</a></sup><sup
+                                    id="cite_ref-expressvpn-bitcoin_34-0" class="reference"><a
+                                        href="#cite_note-expressvpn-bitcoin-34">[32]</a></sup>
+                            </td>
+                            <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><a href="/wiki/Hotspot_Shield" title="Hotspot Shield">Hotspot Shield Elite</a>
+                            </th>
+                            <td><a href="/wiki/United_States" title="United States">United States</a>
+                            </td>
+                            <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">
+                                Yes<sup id="cite_ref-hotspotshield-traffic_36-0" class="reference"><a
+                                        href="#cite_note-hotspotshield-traffic-36">[c]</a></sup>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">
+                                Yes<sup id="cite_ref-hotspotshield-privacy-ip1_37-0" class="reference"><a
+                                        href="#cite_note-hotspotshield-privacy-ip1-37">[34]</a></sup><sup
+                                    id="cite_ref-hotspotshield-privacy-ip2_38-0" class="reference"><a
+                                        href="#cite_note-hotspotshield-privacy-ip2-38">[35]</a></sup>
+                            </td>
+                            <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                            </td>
+                            <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                            </td>
+                            <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><a href="/wiki/IPredator" title="IPredator">IPredator</a>
+                            </th>
+                            <td><a href="/wiki/Sweden" title="Sweden">Sweden</a>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-ipredator-faq-logging_39-0" class="reference"><a
+                                        href="#cite_note-ipredator-faq-logging-39">[36]</a></sup>
+                            </td>
+                            <td>
+                            </td>
+                            <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">
+                                Yes<sup id="cite_ref-ipredator-faq-logging_39-1" class="reference"><a
+                                        href="#cite_note-ipredator-faq-logging-39">[36]</a></sup>
+                            </td>
+                            <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">
+                                Yes<sup id="cite_ref-ipredator-faq-logging_39-2" class="reference"><a
+                                        href="#cite_note-ipredator-faq-logging-39">[36]</a></sup>
+                            </td>
+                            <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">
+                                Yes<sup id="cite_ref-ipredator-faq-logging_39-3" class="reference"><a
+                                        href="#cite_note-ipredator-faq-logging-39">[36]</a></sup>
+                            </td>
+                            <td style="background: #FFD; color: black; vertical-align: middle; text-align: center;"
+                                class="partial table-partial">Email<sup id="cite_ref-ipredator-faq-userdatabase_40-0"
+                                    class="reference"><a href="#cite_note-ipredator-faq-userdatabase-40">[37]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                Yes<sup id="cite_ref-ipredator-bitcoin_41-0" class="reference"><a
+                                        href="#cite_note-ipredator-bitcoin-41">[38]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                Yes<sup id="cite_ref-ipredator-pgp_42-0" class="reference"><a
+                                        href="#cite_note-ipredator-pgp-42">[39]</a></sup>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><a href="/wiki/IPVanish" title="IPVanish">IPVanish</a>
+                            </th>
+                            <td><a href="/wiki/United_States" title="United States">United States</a>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-ipv-privacy-policy_43-0" class="reference"><a
+                                        href="#cite_note-ipv-privacy-policy-43">[40]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-ipv-privacy-policy_43-1" class="reference"><a
+                                        href="#cite_note-ipv-privacy-policy-43">[40]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-ipv-privacy-policy_43-2" class="reference"><a
+                                        href="#cite_note-ipv-privacy-policy-43">[40]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-ipv-privacy-policy_43-3" class="reference"><a
+                                        href="#cite_note-ipv-privacy-policy-43">[40]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-ipv-privacy-policy_43-4" class="reference"><a
+                                        href="#cite_note-ipv-privacy-policy-43">[40]</a></sup>
+                            </td>
+                            <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No<sup
+                                    id="cite_ref-ipvanish-home_44-0" class="reference"><a
+                                        href="#cite_note-ipvanish-home-44">[41]</a></sup>
+                            </td>
+                            <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                            </td>
+                            <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><a href="/wiki/IVPN" title="IVPN">IVPN</a>
+                            </th>
+                            <td><a href="/wiki/Gibraltar" title="Gibraltar">Gibraltar</a>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-ivpn-privacy-policy_45-0" class="reference"><a
+                                        href="#cite_note-ivpn-privacy-policy-45">[42]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-ivpn-privacy-policy_45-1" class="reference"><a
+                                        href="#cite_note-ivpn-privacy-policy-45">[42]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-ivpn-privacy-policy_45-2" class="reference"><a
+                                        href="#cite_note-ivpn-privacy-policy-45">[42]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-ivpn-privacy-policy_45-3" class="reference"><a
+                                        href="#cite_note-ivpn-privacy-policy-45">[42]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-ivpn-privacy-policy_45-4" class="reference"><a
+                                        href="#cite_note-ivpn-privacy-policy-45">[42]</a></sup>
+                            </td>
+                            <td style="background: #FFD; color: black; vertical-align: middle; text-align: center;"
+                                class="partial table-partial">Email
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                Yes<sup id="cite_ref-ivpn-bitcoin_46-0" class="reference"><a
+                                        href="#cite_note-ivpn-bitcoin-46">[43]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                Yes<sup id="cite_ref-ivpn-pgp_47-0" class="reference"><a
+                                        href="#cite_note-ivpn-pgp-47">[44]</a></sup>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><a href="/wiki/Mullvad" title="Mullvad">Mullvad</a>
+                            </th>
+                            <td><a href="/wiki/Sweden" title="Sweden">Sweden</a>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-mullvad-logging_48-0" class="reference"><a
+                                        href="#cite_note-mullvad-logging-48">[45]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-mullvad-logging_48-1" class="reference"><a
+                                        href="#cite_note-mullvad-logging-48">[45]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-mullvad-logging_48-2" class="reference"><a
+                                        href="#cite_note-mullvad-logging-48">[45]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-mullvad-logging_48-3" class="reference"><a
+                                        href="#cite_note-mullvad-logging-48">[45]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-mullvad-logging_48-4" class="reference"><a
+                                        href="#cite_note-mullvad-logging-48">[45]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                Yes<sup id="cite_ref-mullvad-payment-method_49-0" class="reference"><a
+                                        href="#cite_note-mullvad-payment-method-49">[46]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                Yes<sup id="cite_ref-mullvad-payment-method_49-1" class="reference"><a
+                                        href="#cite_note-mullvad-payment-method-49">[46]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                Yes<sup id="cite_ref-mullvad-pgp_50-0" class="reference"><a
+                                        href="#cite_note-mullvad-pgp-50">[47]</a></sup>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><a href="/wiki/NordVPN" title="NordVPN">NordVPN</a>
+                            </th>
+                            <td><a href="/wiki/Panama" title="Panama">Panama</a>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-nordvpn-logging_51-0" class="reference"><a
+                                        href="#cite_note-nordvpn-logging-51">[48]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-nordvpn-logging_51-1" class="reference"><a
+                                        href="#cite_note-nordvpn-logging-51">[48]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-nordvpn-logging_51-2" class="reference"><a
+                                        href="#cite_note-nordvpn-logging-51">[48]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-nordvpn-logging_51-3" class="reference"><a
+                                        href="#cite_note-nordvpn-logging-51">[48]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-nordvpn-logging_51-4" class="reference"><a
+                                        href="#cite_note-nordvpn-logging-51">[48]</a></sup>
+                            </td>
+                            <td style="background: #FFD; color: black; vertical-align: middle; text-align: center;"
+                                class="partial table-partial">Email<sup id="cite_ref-nordvpn-privacy_52-0"
+                                    class="reference"><a href="#cite_note-nordvpn-privacy-52">[49]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">Yes
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                Yes<sup id="cite_ref-53" class="reference"><a href="#cite_note-53">[50]</a></sup>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><a href="/wiki/Private_Internet_Access" title="Private Internet Access">Private Internet
+                                    Access</a>
+                            </th>
+                            <td><a href="/wiki/United_States" title="United States">United States</a>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-pia-privacy-policy_54-0" class="reference"><a
+                                        href="#cite_note-pia-privacy-policy-54">[51]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-pia-privacy-policy_54-1" class="reference"><a
+                                        href="#cite_note-pia-privacy-policy-54">[51]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-pia-privacy-policy_54-2" class="reference"><a
+                                        href="#cite_note-pia-privacy-policy-54">[51]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-pia-privacy-policy_54-3" class="reference"><a
+                                        href="#cite_note-pia-privacy-policy-54">[51]</a></sup><sup
+                                    id="cite_ref-pia-helpdesk-bandwidth_55-0" class="reference"><a
+                                        href="#cite_note-pia-helpdesk-bandwidth-55">[52]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-pia-privacy-policy_54-4" class="reference"><a
+                                        href="#cite_note-pia-privacy-policy-54">[51]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                Yes<sup id="cite_ref-pia-payment-method_56-0" class="reference"><a
+                                        href="#cite_note-pia-payment-method-56">[53]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                Yes<sup id="cite_ref-pia-helpdesk-bitcoin_57-0" class="reference"><a
+                                        href="#cite_note-pia-helpdesk-bitcoin-57">[54]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                Yes<sup id="cite_ref-pia-pgp_58-0" class="reference"><a
+                                        href="#cite_note-pia-pgp-58">[55]</a></sup>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><a href="/wiki/ProtonVPN" title="ProtonVPN">ProtonVPN</a>
+                            </th>
+                            <td><a href="/wiki/Switzerland" title="Switzerland">Switzerland</a>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-protonvpn_privacy-policy_59-0" class="reference"><a
+                                        href="#cite_note-protonvpn_privacy-policy-59">[56]</a></sup>
+                            </td>
+                            <td>
+                            </td>
+                            <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">
+                                Yes<sup id="cite_ref-protonvpn_privacy-policy_59-1" class="reference"><a
+                                        href="#cite_note-protonvpn_privacy-policy-59">[56]</a></sup>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td style="background: #FFD; color: black; vertical-align: middle; text-align: center;"
+                                class="partial table-partial">Email
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">Yes
+                            </td>
+                            <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><a href="/wiki/PureVPN" title="PureVPN">PureVPN</a>
+                            </th>
+                            <td><a href="/wiki/Hong_Kong" title="Hong Kong">Hong Kong</a>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-purevpn-privacy-policy-traffic_60-0" class="reference"><a
+                                        href="#cite_note-purevpn-privacy-policy-traffic-60">[57]</a></sup>
+                            </td>
+                            <td>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-purevpn-privacy-policy-timestamp_61-0" class="reference"><a
+                                        href="#cite_note-purevpn-privacy-policy-timestamp-61">[58]</a></sup>
+                            </td>
+                            <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">
+                                Yes<sup id="cite_ref-purevpn-privacy-policy-bandwidth_62-0" class="reference"><a
+                                        href="#cite_note-purevpn-privacy-policy-bandwidth-62">[59]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-65" class="reference"><a href="#cite_note-65">[d]</a></sup>
+                            </td>
+                            <td style="background: #FFD; color: black; vertical-align: middle; text-align: center;"
+                                class="partial table-partial">Email<sup id="cite_ref-67" class="reference"><a
+                                        href="#cite_note-67">[e]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                Yes<sup id="cite_ref-purevpn-privacy-policy-bitcoin_68-0" class="reference"><a
+                                        href="#cite_note-purevpn-privacy-policy-bitcoin-68">[63]</a></sup>
+                            </td>
+                            <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><a href="/wiki/SaferVPN" title="SaferVPN">SaferVPN</a>
+                            </th>
+                            <td><a href="/wiki/Israel" title="Israel">Israel</a><sup id="cite_ref-safervpn-pcworld_69-0"
+                                    class="reference"><a href="#cite_note-safervpn-pcworld-69">[64]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-safervpn-pripol-logging_70-0" class="reference"><a
+                                        href="#cite_note-safervpn-pripol-logging-70">[65]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-safervpn-pripol-logging_70-1" class="reference"><a
+                                        href="#cite_note-safervpn-pripol-logging-70">[65]</a></sup>
+                            </td>
+                            <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">
+                                Yes<sup id="cite_ref-safervpn-pripol-logging_70-2" class="reference"><a
+                                        href="#cite_note-safervpn-pripol-logging-70">[65]</a></sup>
+                            </td>
+                            <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">
+                                Yes<sup id="cite_ref-safervpn-pripol-logging_70-3" class="reference"><a
+                                        href="#cite_note-safervpn-pripol-logging-70">[65]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-safervpn-pripol-logging_70-4" class="reference"><a
+                                        href="#cite_note-safervpn-pripol-logging-70">[65]</a></sup>
+                            </td>
+                            <td style="background: #FFD; color: black; vertical-align: middle; text-align: center;"
+                                class="partial table-partial">Email<sup id="cite_ref-safervpn-blog-bitcoin_71-0"
+                                    class="reference"><a href="#cite_note-safervpn-blog-bitcoin-71">[66]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                Yes<sup id="cite_ref-safervpn-blog-bitcoin_71-1" class="reference"><a
+                                        href="#cite_note-safervpn-blog-bitcoin-71">[66]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                Yes<sup id="cite_ref-pgp-key-safervpn_72-0" class="reference"><a
+                                        href="#cite_note-pgp-key-safervpn-72">[67]</a></sup>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><a href="/wiki/TunnelBear" title="TunnelBear">TunnelBear</a>
+                            </th>
+                            <td><a href="/wiki/Canada" title="Canada">Canada</a><sup
+                                    id="cite_ref-pcworld-tunnelbear-review_73-0" class="reference"><a
+                                        href="#cite_note-pcworld-tunnelbear-review-73">[68]</a></sup><sup
+                                    id="cite_ref-pcmag-tunnelbear-review_74-0" class="reference"><a
+                                        href="#cite_note-pcmag-tunnelbear-review-74">[69]</a></sup><sup
+                                    id="cite_ref-techradar-tunnelbear_75-0" class="reference"><a
+                                        href="#cite_note-techradar-tunnelbear-75">[70]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-tunnelbear-logging_76-0" class="reference"><a
+                                        href="#cite_note-tunnelbear-logging-76">[71]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-tunnelbear-logging_76-1" class="reference"><a
+                                        href="#cite_note-tunnelbear-logging-76">[71]</a></sup><sup
+                                    id="cite_ref-tunnelbear-dns_77-0" class="reference"><a
+                                        href="#cite_note-tunnelbear-dns-77">[72]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-tunnelbear-logging2_78-0" class="reference"><a
+                                        href="#cite_note-tunnelbear-logging2-78">[73]</a></sup>
+                            </td>
+                            <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">
+                                Yes<sup id="cite_ref-techradar-tunnelbear_75-1" class="reference"><a
+                                        href="#cite_note-techradar-tunnelbear-75">[70]</a></sup><sup
+                                    id="cite_ref-tunnelbear-logging2_78-1" class="reference"><a
+                                        href="#cite_note-tunnelbear-logging2-78">[73]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-tunnelbear-logging_76-2" class="reference"><a
+                                        href="#cite_note-tunnelbear-logging-76">[71]</a></sup>
+                            </td>
+                            <td style="background: #FFD; color: black; vertical-align: middle; text-align: center;"
+                                class="partial table-partial">Email<sup id="cite_ref-pcworld-tunnelbear-review_73-1"
+                                    class="reference"><a href="#cite_note-pcworld-tunnelbear-review-73">[68]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                Yes<sup id="cite_ref-tunnelbear-bitcoin_79-0" class="reference"><a
+                                        href="#cite_note-tunnelbear-bitcoin-79">[74]</a></sup><sup
+                                    id="cite_ref-pcworld-tunnelbear-review_73-2" class="reference"><a
+                                        href="#cite_note-pcworld-tunnelbear-review-73">[68]</a></sup><sup
+                                    id="cite_ref-pcmag-tunnelbear-review_74-1" class="reference"><a
+                                        href="#cite_note-pcmag-tunnelbear-review-74">[69]</a></sup>
+                            </td>
+                            <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><a href="/wiki/VPN.ht" class="mw-redirect" title="VPN.ht">VPN.ht</a>
+                            </th>
+                            <td><a href="/wiki/Hong_Kong" title="Hong Kong">Hong Kong</a>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-vpnht-traffic_80-0" class="reference"><a
+                                        href="#cite_note-vpnht-traffic-80">[75]</a></sup>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td style="background: #FFD; color: black; vertical-align: middle; text-align: center;"
+                                class="partial table-partial">No<sup id="cite_ref-vpnht-bandwidth_82-0"
+                                    class="reference"><a href="#cite_note-vpnht-bandwidth-82">[f]</a></sup>
+                            </td>
+                            <td>
+                            </td>
+                            <td style="background: #FFD; color: black; vertical-align: middle; text-align: center;"
+                                class="partial table-partial">Email<sup id="cite_ref-vpnht-email_83-0"
+                                    class="reference"><a href="#cite_note-vpnht-email-83">[77]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                Yes<sup id="cite_ref-vpnht-bitcoin_84-0" class="reference"><a
+                                        href="#cite_note-vpnht-bitcoin-84">[78]</a></sup>
+                            </td>
+                            <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><a href="/wiki/VPNBook" title="VPNBook">VPNBook</a>
+                            </th>
+                            <td style="background: #ececec; color: #2C2C2C; font-size: smaller; vertical-align: middle; text-align: center;"
+                                class="unknown table-unknown">Un­known<sup id="cite_ref-vpnbook-jurisdiction_85-0"
+                                    class="reference"><a href="#cite_note-vpnbook-jurisdiction-85">[g]</a></sup>
+                            </td>
+                            <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                No<sup id="cite_ref-vpnbook-privacy-policy_86-0" class="reference"><a
+                                        href="#cite_note-vpnbook-privacy-policy-86">[79]</a></sup>
+                            </td>
+                            <td>
+                            </td>
+                            <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">
+                                Yes<sup id="cite_ref-vpnbook-privacy-policy_86-1" class="reference"><a
+                                        href="#cite_note-vpnbook-privacy-policy-86">[79]</a></sup>
+                            </td>
+                            <td>
+                            </td>
+                            <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">
+                                Yes<sup id="cite_ref-vpnbook-privacy-policy_86-2" class="reference"><a
+                                        href="#cite_note-vpnbook-privacy-policy-86">[79]</a></sup>
+                            </td>
+                            <td data-sort-value="Y" style="background:#9F9;vertical-align:middle;text-align:center;"
+                                class="table-yes">N/A<sup id="cite_ref-vpnbook-anonpayment_87-0" class="reference"><a
+                                        href="#cite_note-vpnbook-anonpayment-87">[h]</a></sup>
+                            </td>
+                            <td data-sort-value="Y" style="background:#9F9;vertical-align:middle;text-align:center;"
+                                class="table-yes">N/A<sup id="cite_ref-vpnbook-anonpayment_87-1" class="reference"><a
+                                        href="#cite_note-vpnbook-anonpayment-87">[h]</a></sup>
+                            </td>
+                            <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-dark">
+                        <h5 style="color:white">
+                            Технически услуги</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Списание PC препоръчва на потребителите да обмислят избора на доставчик,
+                            базиран в страна, в която няма закони за запазване на данни, тъй като това улеснява услугата
+                            да спазва обещанието да не се регистрира. PC Magazine и TechRadar също така препоръчват
+                            на потребителите да прочетат политиката за регистриране на доставчика, преди да се
+                            регистрират за услугата, тъй като някои доставчици събират информация за използването
+                            на VPN от своите клиенти. PC World препоръчва на потребителите да избягват безплатни
+                            услуги като правило и твърди, че безплатните услуги или продават данните за сърфиране на
+                            своите потребители в обобщена форма на изследователи и търговци, или предлагат само
+                            минимално количество пренос на данни на месец. Logitheque обяснява защо в мрежата има
+                            толкова много уебсайтове за сравнение на VPN.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div style="overflow: auto;">
+                    <table class="wikitable sortable jquery-tablesorter"
+                        style="text-align: center; font-size: 80%; width: auto; table-layout: fixed;">
+                        <thead>
+                            <tr>
+                                <th rowspan="2" class="headerSort" tabindex="0" role="columnheader button"
+                                    title="Sort ascending">Service
+                                </th>
+                                <th colspan="2"><a href="#Leak_Protection">Leak Protection</a>
+                                </th>
+                                <th colspan="2"><a href="#Protocols">Protocols</a>
+                                </th>
+                                <th colspan="7"><a href="#Obfuscation">Obfuscation</a> / <a
+                                        href="#Censorship_Avoidance">Censorship Avoidance</a>
+                                </th>
+                                <th colspan="2"><a href="#Network_Neutrality">Network Neutrality</a>
+                                </th>
+                                <th colspan="2">Server
+                                </th>
+                                <th colspan="2"><a href="#Data_Encryption">Data Encryption</a>
+                                </th>
+                                <th colspan="2"><a href="#Handshake_Encryption">Handshake Encryption</a>
+                                </th>
+                                <th colspan="2"><a href="#Data_Authentication">Data Authentication</a>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending"><a
+                                        href="#First-party_DNS_servers">First-party DNS servers</a>
+                                </th>
+                                <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending"><a
+                                        href="#IPv6_supported_/_blocked">IPv6 supported / blocked</a>
+                                </th>
+                                <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending"><a
+                                        href="#Offers_OpenVPN">Offers OpenVPN</a>
+                                </th>
+                                <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending"><a
+                                        href="#Offers_WireGuard">Offers WireGuard</a>
+                                </th>
+                                <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending"><a
+                                        href="#Supports_multihop">Supports multihop</a>
+                                </th>
+                                <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending"><a
+                                        href="#Supports_TCP_port_443">Supports TCP port 443</a>
+                                </th>
+                                <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending"><a
+                                        href="#Supports_Obfsproxy">Supports Obfsproxy</a>
+                                </th>
+                                <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending"><a
+                                        href="#Offers_SOCKS">Offers SOCKS</a>
+                                </th>
+                                <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending"><a
+                                        href="#Supports_SSL_tunnel">Supports SSL tunnel</a>
+                                </th>
+                                <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending"><a
+                                        href="#Supports_SSH_tunnel">Supports SSH tunnel</a>
+                                </th>
+                                <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending"><a
+                                        href="#Other_proprietary_protocols">Other proprietary protocols</a>
+                                </th>
+                                <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending"><a
+                                        href="#Blocks_SMTP_(authent.)">Blocks SMTP (authent.)</a>
+                                </th>
+                                <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending"><a
+                                        href="#Blocks_P2P">Blocks P2P</a>
+                                </th>
+                                <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending"><a
+                                        href="#Dedicated_or_Virtual">Dedicated or Virtual</a>
+                                </th>
+                                <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending"><a
+                                        href="#Diskless">Diskless</a>
+                                </th>
+                                <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">
+                                    Default provided
+                                </th>
+                                <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">
+                                    Strongest provided
+                                </th>
+                                <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">
+                                    Weakest provided
+                                </th>
+                                <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">
+                                    Strongest provided
+                                </th>
+                                <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">
+                                    Weakest provided
+                                </th>
+                                <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">
+                                    Strongest provided
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <th><a href="/wiki/Avast_SecureLine" class="mw-redirect" title="Avast SecureLine">Avast
+                                        SecureLine</a>
+                                </th>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td style="background: #FFD; color: black; vertical-align: middle; text-align: center;"
+                                    class="partial table-partial">Some<sup id="cite_ref-secureline-p2p_88-0"
+                                        class="reference"><a href="#cite_note-secureline-p2p-88">[80]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Dedicated<sup id="cite_ref-secureline-dedicated-servers_89-0" class="reference"><a
+                                            href="#cite_note-secureline-dedicated-servers-89">[81]</a></sup>
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td><a href="/wiki/Advanced_Encryption_Standard"
+                                        title="Advanced Encryption Standard">AES-256</a>
+                                </td>
+                                <td><a href="/wiki/Advanced_Encryption_Standard"
+                                        title="Advanced Encryption Standard">AES-256</a>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><a href="/wiki/Avira" title="Avira">Avira Phantom VPN</a>
+                                </th>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Dedicated
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td><a href="/wiki/Advanced_Encryption_Standard"
+                                        title="Advanced Encryption Standard">AES-256</a>
+                                </td>
+                                <td><a href="/wiki/Advanced_Encryption_Standard"
+                                        title="Advanced Encryption Standard">AES-256</a>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><a href="/wiki/BlackVPN" title="BlackVPN">blackVPN</a>
+                                </th>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-blackvpn-about-features_90-0" class="reference"><a
+                                            href="#cite_note-blackvpn-about-features-90">[82]</a></sup>
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-blackvpn-about-features_90-1" class="reference"><a
+                                            href="#cite_note-blackvpn-about-features-90">[82]</a></sup>
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-blackvpn-about-features_90-2" class="reference"><a
+                                            href="#cite_note-blackvpn-about-features-90">[82]</a></sup>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td style="background: #FFD; color: black; vertical-align: middle; text-align: center;"
+                                    class="partial table-partial">Some<sup id="cite_ref-blackvpn-smtp_91-0"
+                                        class="reference"><a href="#cite_note-blackvpn-smtp-91">[a]</a></sup>
+                                </td>
+                                <td style="background: #FFD; color: black; vertical-align: middle; text-align: center;"
+                                    class="partial table-partial">Some<sup id="cite_ref-blackvpn-tos2_92-0"
+                                        class="reference"><a href="#cite_note-blackvpn-tos2-92">[83]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Dedicated
+                                </td>
+                                <td>
+                                </td>
+                                <td><a href="/wiki/Advanced_Encryption_Standard"
+                                        title="Advanced Encryption Standard">AES-256</a><sup
+                                        id="cite_ref-blackvpn-about-features_90-4" class="reference"><a
+                                            href="#cite_note-blackvpn-about-features-90">[82]</a></sup>
+                                </td>
+                                <td><a href="/wiki/Advanced_Encryption_Standard"
+                                        title="Advanced Encryption Standard">AES-256</a><sup
+                                        id="cite_ref-blackvpn-about-features_90-5" class="reference"><a
+                                            href="#cite_note-blackvpn-about-features-90">[82]</a></sup>
+                                </td>
+                                <td><a href="/wiki/RSA_(cryptosystem)" title="RSA (cryptosystem)">RSA-4096</a><sup
+                                        id="cite_ref-blackvpn-about-features_90-6" class="reference"><a
+                                            href="#cite_note-blackvpn-about-features-90">[82]</a></sup>
+                                </td>
+                                <td><a href="/wiki/RSA_(cryptosystem)" title="RSA (cryptosystem)">RSA-4096</a><sup
+                                        id="cite_ref-blackvpn-about-features_90-7" class="reference"><a
+                                            href="#cite_note-blackvpn-about-features-90">[82]</a></sup>
+                                </td>
+                                <td><a href="/wiki/SHA-2" title="SHA-2">SHA-512</a><sup
+                                        id="cite_ref-blackvpn-about-features_90-8" class="reference"><a
+                                            href="#cite_note-blackvpn-about-features-90">[82]</a></sup>
+                                </td>
+                                <td><a href="/wiki/SHA-2" title="SHA-2">SHA-512</a><sup
+                                        id="cite_ref-blackvpn-about-features_90-9" class="reference"><a
+                                            href="#cite_note-blackvpn-about-features-90">[82]</a></sup>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><a href="/wiki/ExpressVPN" title="ExpressVPN">ExpressVPN</a>
+                                </th>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-pcmag-expvpn-review_27-1" class="reference"><a
+                                            href="#cite_note-pcmag-expvpn-review-27">[25]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-pcmag-expvpn-review_27-2" class="reference"><a
+                                            href="#cite_note-pcmag-expvpn-review-27">[25]</a></sup><sup
+                                        id="cite_ref-techradar-expvpn_28-3" class="reference"><a
+                                            href="#cite_note-techradar-expvpn-28">[26]</a></sup><sup
+                                        id="cite_ref-pcworld-expvpn-review_29-3" class="reference"><a
+                                            href="#cite_note-pcworld-expvpn-review-29">[27]</a></sup>
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-expressvpn-ssl_93-0" class="reference"><a
+                                            href="#cite_note-expressvpn-ssl-93">[84]</a></sup>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    No<sup id="cite_ref-pcmag-expvpn-review_27-3" class="reference"><a
+                                            href="#cite_note-pcmag-expvpn-review-27">[25]</a></sup><sup
+                                        id="cite_ref-techradar-expvpn_28-4" class="reference"><a
+                                            href="#cite_note-techradar-expvpn-28">[26]</a></sup><sup
+                                        id="cite_ref-pcworld-expvpn-review_29-4" class="reference"><a
+                                            href="#cite_note-pcworld-expvpn-review-29">[27]</a></sup>
+                                </td>
+                                <td style="background: #FFD; color: black; vertical-align: middle; text-align: center;"
+                                    class="partial table-partial">Both<sup id="cite_ref-expressvpn-virtual_94-0"
+                                        class="reference"><a href="#cite_note-expressvpn-virtual-94">[85]</a></sup><sup
+                                        id="cite_ref-pcworld-expresspure-servers_95-0" class="reference"><a
+                                            href="#cite_note-pcworld-expresspure-servers-95">[86]</a></sup>
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td>
+                                </td>
+                                <td><a href="/wiki/Advanced_Encryption_Standard"
+                                        title="Advanced Encryption Standard">AES-256</a>
+                                </td>
+                                <td>
+                                </td>
+                                <td><a href="/wiki/Certificate_authority" title="Certificate authority">CA-4096</a>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><a href="/wiki/Hotspot_Shield" title="Hotspot Shield">Hotspot Shield Elite</a>
+                                </th>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td><a href="/wiki/Advanced_Encryption_Standard"
+                                        title="Advanced Encryption Standard">AES-128</a><sup
+                                        id="cite_ref-hotspotshield-encryption_96-0" class="reference"><a
+                                            href="#cite_note-hotspotshield-encryption-96">[87]</a></sup>
+                                </td>
+                                <td><a href="/wiki/Advanced_Encryption_Standard"
+                                        title="Advanced Encryption Standard">AES-128</a><sup
+                                        id="cite_ref-hotspotshield-encryption_96-1" class="reference"><a
+                                            href="#cite_note-hotspotshield-encryption-96">[87]</a></sup>
+                                </td>
+                                <td><a href="/wiki/TLS_1.2" class="mw-redirect" title="TLS 1.2">TLS 1.2</a> <a
+                                        href="/wiki/Elliptic-curve_Diffie-Hellman" class="mw-redirect"
+                                        title="Elliptic-curve Diffie-Hellman">ECDHE</a> <a
+                                        href="/wiki/Perfect_forward_secrecy" class="mw-redirect"
+                                        title="Perfect forward secrecy">PFS</a><sup
+                                        id="cite_ref-hotspotshield-encryption_96-2" class="reference"><a
+                                            href="#cite_note-hotspotshield-encryption-96">[87]</a></sup>
+                                </td>
+                                <td><a href="/wiki/TLS_1.2" class="mw-redirect" title="TLS 1.2">TLS 1.2</a> <a
+                                        href="/wiki/Elliptic-curve_Diffie-Hellman" class="mw-redirect"
+                                        title="Elliptic-curve Diffie-Hellman">ECDHE</a> <a
+                                        href="/wiki/Perfect_forward_secrecy" class="mw-redirect"
+                                        title="Perfect forward secrecy">PFS</a><sup
+                                        id="cite_ref-hotspotshield-encryption_96-3" class="reference"><a
+                                            href="#cite_note-hotspotshield-encryption-96">[87]</a></sup>
+                                </td>
+                                <td><a href="/wiki/HMAC" title="HMAC">HMAC</a><sup
+                                        id="cite_ref-hotspotshield-privacy-hmac_97-0" class="reference"><a
+                                            href="#cite_note-hotspotshield-privacy-hmac-97">[88]</a></sup>
+                                </td>
+                                <td><a href="/wiki/HMAC" title="HMAC">HMAC</a><sup
+                                        id="cite_ref-hotspotshield-privacy-hmac_97-1" class="reference"><a
+                                            href="#cite_note-hotspotshield-privacy-hmac-97">[88]</a></sup>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><a href="/wiki/IPredator" title="IPredator">IPredator</a>
+                                </th>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-ipredator-faq-dns_98-0" class="reference"><a
+                                            href="#cite_note-ipredator-faq-dns-98">[89]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-ipredator-faq-ipv6_99-0" class="reference"><a
+                                            href="#cite_note-ipredator-faq-ipv6-99">[90]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-ipredator-faq-openvpn_100-0" class="reference"><a
+                                            href="#cite_note-ipredator-faq-openvpn-100">[91]</a></sup>
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-ipredator-openvpnvonfig-tcp443_101-0" class="reference"><a
+                                            href="#cite_note-ipredator-openvpnvonfig-tcp443-101">[92]</a></sup>
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td><a href="/wiki/Advanced_Encryption_Standard"
+                                        title="Advanced Encryption Standard">AES-256</a> (CBC)<sup
+                                        id="cite_ref-ipredator-openvpnconfig-overview_102-0" class="reference"><a
+                                            href="#cite_note-ipredator-openvpnconfig-overview-102">[93]</a></sup>
+                                </td>
+                                <td><a href="/wiki/Advanced_Encryption_Standard"
+                                        title="Advanced Encryption Standard">AES-256</a> (CBC)<sup
+                                        id="cite_ref-ipredator-openvpnconfig-overview_102-1" class="reference"><a
+                                            href="#cite_note-ipredator-openvpnconfig-overview-102">[93]</a></sup>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td><a href="/wiki/SHA-1" title="SHA-1">SHA-1</a><sup
+                                        id="cite_ref-ipredator-openvpnconfig-overview_102-2" class="reference"><a
+                                            href="#cite_note-ipredator-openvpnconfig-overview-102">[93]</a></sup>
+                                </td>
+                                <td><a href="/wiki/SHA-1" title="SHA-1">SHA-1</a><sup
+                                        id="cite_ref-ipredator-openvpnconfig-overview_102-3" class="reference"><a
+                                            href="#cite_note-ipredator-openvpnconfig-overview-102">[93]</a></sup>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><a href="/wiki/IPVanish" title="IPVanish">IPVanish</a>
+                                </th>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-dns-leak-protection_103-0" class="reference"><a
+                                            href="#cite_note-dns-leak-protection-103">[94]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-ipv6-leak-protection_104-0" class="reference"><a
+                                            href="#cite_note-ipv6-leak-protection-104">[95]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-ipvanish-home_44-1" class="reference"><a
+                                            href="#cite_note-ipvanish-home-44">[41]</a></sup>
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-ipv-ports-protocols_105-0" class="reference"><a
+                                            href="#cite_note-ipv-ports-protocols-105">[96]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-ipv-scrambler_106-0" class="reference"><a
+                                            href="#cite_note-ipv-scrambler-106">[97]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-ipvanish-home_44-2" class="reference"><a
+                                            href="#cite_note-ipvanish-home-44">[41]</a></sup>
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    No<sup id="cite_ref-ipvanish-home_44-3" class="reference"><a
+                                            href="#cite_note-ipvanish-home-44">[41]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    No<sup id="cite_ref-ipvanish-home_44-4" class="reference"><a
+                                            href="#cite_note-ipvanish-home-44">[41]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Dedicated<sup id="cite_ref-ipv-bvpn-interview_107-0" class="reference"><a
+                                            href="#cite_note-ipv-bvpn-interview-107">[98]</a></sup>
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td><a href="/wiki/Advanced_Encryption_Standard"
+                                        title="Advanced Encryption Standard">AES-256</a><sup
+                                        id="cite_ref-ipv-vpn-encryption_108-0" class="reference"><a
+                                            href="#cite_note-ipv-vpn-encryption-108">[99]</a></sup>
+                                </td>
+                                <td><a href="/wiki/Advanced_Encryption_Standard"
+                                        title="Advanced Encryption Standard">AES-256</a><sup
+                                        id="cite_ref-ipv-vpn-encryption_108-1" class="reference"><a
+                                            href="#cite_note-ipv-vpn-encryption-108">[99]</a></sup>
+                                </td>
+                                <td><a href="/wiki/RSA_(cryptosystem)" title="RSA (cryptosystem)">RSA-2048</a><sup
+                                        id="cite_ref-ipv-vpn-encryption_108-2" class="reference"><a
+                                            href="#cite_note-ipv-vpn-encryption-108">[99]</a></sup>
+                                </td>
+                                <td><a href="/wiki/RSA_(cryptosystem)" title="RSA (cryptosystem)">RSA-2048</a><sup
+                                        id="cite_ref-ipv-vpn-encryption_108-3" class="reference"><a
+                                            href="#cite_note-ipv-vpn-encryption-108">[99]</a></sup>
+                                </td>
+                                <td><a href="/wiki/SHA-2" title="SHA-2">SHA-2</a>56<sup
+                                        id="cite_ref-ipv-vpn-encryption_108-4" class="reference"><a
+                                            href="#cite_note-ipv-vpn-encryption-108">[99]</a></sup>
+                                </td>
+                                <td><a href="/wiki/SHA-2" title="SHA-2">SHA-2</a>56<sup
+                                        id="cite_ref-ipv-vpn-encryption_108-5" class="reference"><a
+                                            href="#cite_note-ipv-vpn-encryption-108">[99]</a></sup>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><a href="/wiki/IVPN" title="IVPN">IVPN</a>
+                                </th>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-ivpn-features_109-0" class="reference"><a
+                                            href="#cite_note-ivpn-features-109">[100]</a></sup>
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">
+                                    No<sup id="cite_ref-IVPN-IPv6_110-0" class="reference"><a
+                                            href="#cite_note-IVPN-IPv6-110">[101]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Beta<sup id="cite_ref-IVPN-wireguard_111-0" class="reference"><a
+                                            href="#cite_note-IVPN-wireguard-111">[102]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes;
+                                    OpenVPN
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-ivpn-ssh_112-0" class="reference"><a
+                                            href="#cite_note-ivpn-ssh-112">[103]</a></sup>
+                                </td>
+                                <td>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    No<sup id="cite_ref-ivpn-smtp_113-0" class="reference"><a
+                                            href="#cite_note-ivpn-smtp-113">[104]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    No<sup id="cite_ref-ivpn-p2p_114-0" class="reference"><a
+                                            href="#cite_note-ivpn-p2p-114">[105]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Dedicated<sup id="cite_ref-IVPN-18-Questions_115-0" class="reference"><a
+                                            href="#cite_note-IVPN-18-Questions-115">[106]</a></sup>
+                                </td>
+                                <td>
+                                </td>
+                                <td><a href="/wiki/Advanced_Encryption_Standard"
+                                        title="Advanced Encryption Standard">AES-256</a><sup
+                                        id="cite_ref-ivpn-features_109-1" class="reference"><a
+                                            href="#cite_note-ivpn-features-109">[100]</a></sup>
+                                </td>
+                                <td><a href="/wiki/Advanced_Encryption_Standard"
+                                        title="Advanced Encryption Standard">AES-256</a><sup
+                                        id="cite_ref-ivpn-features_109-2" class="reference"><a
+                                            href="#cite_note-ivpn-features-109">[100]</a></sup>
+                                </td>
+                                <td>
+                                </td>
+                                <td><a href="/wiki/RSA_(cryptosystem)" title="RSA (cryptosystem)">RSA-4096</a><sup
+                                        id="cite_ref-ivpn-features_109-3" class="reference"><a
+                                            href="#cite_note-ivpn-features-109">[100]</a></sup>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th><a href="/wiki/Mullvad" title="Mullvad">Mullvad</a>
+                                </th>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-mullvad-features_116-0" class="reference"><a
+                                            href="#cite_note-mullvad-features-116">[107]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-mullvad-features_116-1" class="reference"><a
+                                            href="#cite_note-mullvad-features-116">[107]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-mullvad-features_116-2" class="reference"><a
+                                            href="#cite_note-mullvad-features-116">[107]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-mullvad-wireguard_117-0" class="reference"><a
+                                            href="#cite_note-mullvad-wireguard-117">[108]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes;
+                                    WireGuard<sup id="cite_ref-mullvad-multihop-wireguard_118-0" class="reference"><a
+                                            href="#cite_note-mullvad-multihop-wireguard-118">[109]</a></sup> and SOCKS5
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-mullvad-features_116-3" class="reference"><a
+                                            href="#cite_note-mullvad-features-116">[107]</a></sup>
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">
+                                    No<sup id="cite_ref-mullvad-client65_119-0" class="reference"><a
+                                            href="#cite_note-mullvad-client65-119">[110]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-mullvad-socks5_120-0" class="reference"><a
+                                            href="#cite_note-mullvad-socks5-120">[111]</a></sup><sup
+                                        id="cite_ref-mullvad-features_116-4" class="reference"><a
+                                            href="#cite_note-mullvad-features-116">[107]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-mullvad-features_116-5" class="reference"><a
+                                            href="#cite_note-mullvad-features-116">[107]</a></sup>
+                                </td>
+                                <td>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    No<sup id="cite_ref-mullvad-features_116-6" class="reference"><a
+                                            href="#cite_note-mullvad-features-116">[107]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    No<sup id="cite_ref-mullvad-features_116-7" class="reference"><a
+                                            href="#cite_note-mullvad-features-116">[107]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Dedicated<sup id="cite_ref-mullvad-features-technical_121-0" class="reference"><a
+                                            href="#cite_note-mullvad-features-technical-121">[112]</a></sup>
+                                </td>
+                                <td>
+                                </td>
+                                <td><a href="/wiki/Advanced_Encryption_Standard"
+                                        title="Advanced Encryption Standard">AES-256</a> (<a
+                                        href="/wiki/Galois/Counter_Mode" title="Galois/Counter Mode">GCM</a>)<sup
+                                        id="cite_ref-mullvad-features_116-8" class="reference"><a
+                                            href="#cite_note-mullvad-features-116">[107]</a></sup>
+                                </td>
+                                <td><a href="/wiki/Advanced_Encryption_Standard"
+                                        title="Advanced Encryption Standard">AES-256</a><sup
+                                        id="cite_ref-mullvad-features_116-9" class="reference"><a
+                                            href="#cite_note-mullvad-features-116">[107]</a></sup>
+                                </td>
+                                <td><a href="/wiki/RSA_(cryptosystem)" title="RSA (cryptosystem)">RSA-4096</a><sup
+                                        id="cite_ref-mullvad-features_116-10" class="reference"><a
+                                            href="#cite_note-mullvad-features-116">[107]</a></sup>
+                                </td>
+                                <td><a href="/wiki/RSA_(cryptosystem)" title="RSA (cryptosystem)">RSA-4096</a><sup
+                                        id="cite_ref-mullvad-features_116-11" class="reference"><a
+                                            href="#cite_note-mullvad-features-116">[107]</a></sup>
+                                </td>
+                                <td><a href="/wiki/SHA-2" title="SHA-2">SHA-512</a><sup
+                                        id="cite_ref-mullvad-features_116-12" class="reference"><a
+                                            href="#cite_note-mullvad-features-116">[107]</a></sup>
+                                </td>
+                                <td><a href="/wiki/SHA-2" title="SHA-2">SHA-512</a><sup
+                                        id="cite_ref-mullvad-features_116-13" class="reference"><a
+                                            href="#cite_note-mullvad-features-116">[107]</a></sup>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><a href="/wiki/NordVPN" title="NordVPN">NordVPN</a>
+                                </th>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-nordvpn-dns_122-0" class="reference"><a
+                                            href="#cite_note-nordvpn-dns-122">[113]</a></sup>
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">
+                                    No<sup id="cite_ref-nordvpn-faq-ipv6_123-0" class="reference"><a
+                                            href="#cite_note-nordvpn-faq-ipv6-123">[114]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-nordvpn-faq-technical_124-0" class="reference"><a
+                                            href="#cite_note-nordvpn-faq-technical-124">[115]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes;
+                                    NordLynx based on WireGuard<sup id="cite_ref-125" class="reference"><a
+                                            href="#cite_note-125">[116]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes;
+                                    OpenVPN<sup id="cite_ref-nordvpn-double-vpn_126-0" class="reference"><a
+                                            href="#cite_note-nordvpn-double-vpn-126">[117]</a></sup> and SOCKS5
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-nordvpn-tcp_port_443_127-0" class="reference"><a
+                                            href="#cite_note-nordvpn-tcp_port_443-127">[118]</a></sup>
+                                </td>
+                                <td>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-nordvpn-faq-socks_128-0" class="reference"><a
+                                            href="#cite_note-nordvpn-faq-socks-128">[119]</a></sup>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">
+                                    Yes
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    No<sup id="cite_ref-nordvpn-p2p_129-0" class="reference"><a
+                                            href="#cite_note-nordvpn-p2p-129">[120]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Dedicated
+                                </td>
+                                <td>
+                                </td>
+                                <td><a href="/wiki/Advanced_Encryption_Standard"
+                                        title="Advanced Encryption Standard">AES-256</a><sup
+                                        id="cite_ref-nordvpn-encryption_130-0" class="reference"><a
+                                            href="#cite_note-nordvpn-encryption-130">[121]</a></sup>
+                                </td>
+                                <td><a href="/wiki/Advanced_Encryption_Standard"
+                                        title="Advanced Encryption Standard">AES-256</a> (<a
+                                        href="/wiki/Block_cipher_mode_of_operation#Cipher_Block_Chaining_(CBC)"
+                                        title="Block cipher mode of operation">CBC</a>)<sup
+                                        id="cite_ref-nordvpn-encryption_130-1" class="reference"><a
+                                            href="#cite_note-nordvpn-encryption-130">[121]</a></sup>
+                                </td>
+                                <td>2048-bit <a href="/wiki/Diffie-Hellman" class="mw-redirect"
+                                        title="Diffie-Hellman">Diffie-Hellman</a><sup
+                                        id="cite_ref-nordvpn-encryption_130-2" class="reference"><a
+                                            href="#cite_note-nordvpn-encryption-130">[121]</a></sup>
+                                </td>
+                                <td>2048-bit <a href="/wiki/Diffie-Hellman" class="mw-redirect"
+                                        title="Diffie-Hellman">Diffie-Hellman</a><sup
+                                        id="cite_ref-nordvpn-encryption_130-3" class="reference"><a
+                                            href="#cite_note-nordvpn-encryption-130">[121]</a></sup>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><a href="/wiki/Private_Internet_Access" title="Private Internet Access">Private
+                                        Internet
+                                        Access</a>
+                                </th>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-pia-dns_131-0" class="reference"><a
+                                            href="#cite_note-pia-dns-131">[122]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-pia-ipv6_132-0" class="reference"><a
+                                            href="#cite_note-pia-ipv6-132">[123]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-pia-openvpn_133-0" class="reference"><a
+                                            href="#cite_note-pia-openvpn-133">[124]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Beta<sup id="cite_ref-pia-wireguard_134-0" class="reference"><a
+                                            href="#cite_note-pia-wireguard-134">[125]</a></sup>
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-pia-helpdesk-ports_135-0" class="reference"><a
+                                            href="#cite_note-pia-helpdesk-ports-135">[126]</a></sup>
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-pia-socks5_136-0" class="reference"><a
+                                            href="#cite_note-pia-socks5-136">[127]</a></sup><sup
+                                        id="cite_ref-pia-socks5_2_137-0" class="reference"><a
+                                            href="#cite_note-pia-socks5_2-137">[128]</a></sup>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td style="background: #FFD; color: black; vertical-align: middle; text-align: center;"
+                                    class="partial table-partial">Some<sup id="cite_ref-139" class="reference"><a
+                                            href="#cite_note-139">[b]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    No<sup id="cite_ref-pia-p2p_140-0" class="reference"><a
+                                            href="#cite_note-pia-p2p-140">[130]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Dedicated<sup id="cite_ref-141" class="reference"><a
+                                            href="#cite_note-141">[131]</a></sup>
+                                </td>
+                                <td>
+                                </td>
+                                <td><a href="/wiki/Advanced_Encryption_Standard"
+                                        title="Advanced Encryption Standard">AES-128</a> (<a
+                                        href="/wiki/Block_cipher_mode_of_operation#Cipher_block_chaining"
+                                        title="Block cipher mode of operation">CBC</a>)<sup
+                                        id="cite_ref-pia-encryption_142-0" class="reference"><a
+                                            href="#cite_note-pia-encryption-142">[132]</a></sup>
+                                </td>
+                                <td><a href="/wiki/Advanced_Encryption_Standard"
+                                        title="Advanced Encryption Standard">AES-256</a><sup
+                                        id="cite_ref-pia-encryption_142-1" class="reference"><a
+                                            href="#cite_note-pia-encryption-142">[132]</a></sup>
+                                </td>
+                                <td><a href="/wiki/Elliptic-curve_cryptography#Security"
+                                        title="Elliptic-curve cryptography">ECC-256k1</a><sup
+                                        id="cite_ref-pia-encryption_142-2" class="reference"><a
+                                            href="#cite_note-pia-encryption-142">[132]</a></sup>
+                                </td>
+                                <td><a href="/wiki/RSA_(cryptosystem)" title="RSA (cryptosystem)">RSA-4096</a><sup
+                                        id="cite_ref-pia-encryption_142-3" class="reference"><a
+                                            href="#cite_note-pia-encryption-142">[132]</a></sup>
+                                </td>
+                                <td><a href="/wiki/SHA-1" title="SHA-1">SHA-1</a><sup id="cite_ref-pia-encryption_142-4"
+                                        class="reference"><a href="#cite_note-pia-encryption-142">[132]</a></sup>
+                                </td>
+                                <td><a href="/wiki/SHA-2" title="SHA-2">SHA-2</a>56<sup
+                                        id="cite_ref-pia-encryption_142-5" class="reference"><a
+                                            href="#cite_note-pia-encryption-142">[132]</a></sup>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><a href="/wiki/ProtonVPN" title="ProtonVPN">ProtonVPN</a>
+                                </th>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Beta<sup id="cite_ref-pvpn-wireguard_143-0" class="reference"><a
+                                            href="#cite_note-pvpn-wireguard-143">[133]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td style="background: #FFD; color: black; vertical-align: middle; text-align: center;"
+                                    class="partial table-partial">Some
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Dedicated
+                                </td>
+                                <td>
+                                </td>
+                                <td><a href="/wiki/Advanced_Encryption_Standard"
+                                        title="Advanced Encryption Standard">AES-256</a>
+                                </td>
+                                <td><a href="/wiki/Advanced_Encryption_Standard"
+                                        title="Advanced Encryption Standard">AES-256</a>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><a href="/wiki/PureVPN" title="PureVPN">PureVPN</a>
+                                </th>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-purevpn-features_144-0" class="reference"><a
+                                            href="#cite_note-purevpn-features-144">[134]</a></sup>
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background: #FFD; color: black; vertical-align: middle; text-align: center;"
+                                    class="partial table-partial">Only through <a
+                                        href="/wiki/Secure_Socket_Tunneling_Protocol"
+                                        title="Secure Socket Tunneling Protocol">SSTP</a><sup
+                                        id="cite_ref-purevpn-ports_145-0" class="reference"><a
+                                            href="#cite_note-purevpn-ports-145">[135]</a></sup>
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    No
+                                </td>
+                                <td style="background: #FFD; color: black; vertical-align: middle; text-align: center;"
+                                    class="partial table-partial">Some<sup id="cite_ref-purevpn-p2p_146-0"
+                                        class="reference"><a href="#cite_note-purevpn-p2p-146">[136]</a></sup>
+                                </td>
+                                <td style="background: #FFD; color: black; vertical-align: middle; text-align: center;"
+                                    class="partial table-partial">Both<sup id="cite_ref-147" class="reference"><a
+                                            href="#cite_note-147">[137]</a></sup><sup
+                                        id="cite_ref-pcworld-expresspure-servers_95-1" class="reference"><a
+                                            href="#cite_note-pcworld-expresspure-servers-95">[86]</a></sup>
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td>
+                                </td>
+                                <td><a href="/wiki/Advanced_Encryption_Standard"
+                                        title="Advanced Encryption Standard">AES-256</a>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><a href="/wiki/SaferVPN" title="SaferVPN">SaferVPN</a>
+                                </th>
+                                <td>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-safervpn-ipv6_148-0" class="reference"><a
+                                            href="#cite_note-safervpn-ipv6-148">[138]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-safervpn-protocols_149-0" class="reference"><a
+                                            href="#cite_note-safervpn-protocols-149">[139]</a></sup><sup
+                                        id="cite_ref-safervpn-pcworld_69-1" class="reference"><a
+                                            href="#cite_note-safervpn-pcworld-69">[64]</a></sup>
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">
+                                    No<sup id="cite_ref-safervpn-protocols_149-1" class="reference"><a
+                                            href="#cite_note-safervpn-protocols-149">[139]</a></sup>
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-safervpn-tcp_150-0" class="reference"><a
+                                            href="#cite_note-safervpn-tcp-150">[140]</a></sup>
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td style="background: #FFD; color: black; vertical-align: middle; text-align: center;"
+                                    class="partial table-partial">Some<sup id="cite_ref-safervpn-p2p_152-0"
+                                        class="reference"><a href="#cite_note-safervpn-p2p-152">[c]</a></sup>
+                                </td>
+                                <td>
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td><a href="/wiki/Advanced_Encryption_Standard"
+                                        title="Advanced Encryption Standard">AES-256</a><sup
+                                        id="cite_ref-safervpn-protocols_149-2" class="reference"><a
+                                            href="#cite_note-safervpn-protocols-149">[139]</a></sup>
+                                </td>
+                                <td><a href="/wiki/Advanced_Encryption_Standard"
+                                        title="Advanced Encryption Standard">AES-256</a><sup
+                                        id="cite_ref-safervpn-protocols_149-3" class="reference"><a
+                                            href="#cite_note-safervpn-protocols-149">[139]</a></sup>
+                                </td>
+                                <td>2048bit SSL/TLS<sup id="cite_ref-safervpn-protocols_149-4" class="reference"><a
+                                            href="#cite_note-safervpn-protocols-149">[139]</a></sup>
+                                </td>
+                                <td>2048bit SSL/TLS<sup id="cite_ref-safervpn-protocols_149-5" class="reference"><a
+                                            href="#cite_note-safervpn-protocols-149">[139]</a></sup>
+                                </td>
+                                <td><a href="/wiki/SHA-2" title="SHA-2">SHA-2</a>56<sup
+                                        id="cite_ref-safervpn-protocols_149-6" class="reference"><a
+                                            href="#cite_note-safervpn-protocols-149">[139]</a></sup>
+                                </td>
+                                <td><a href="/wiki/SHA-2" title="SHA-2">SHA-2</a>56<sup
+                                        id="cite_ref-safervpn-protocols_149-7" class="reference"><a
+                                            href="#cite_note-safervpn-protocols-149">[139]</a></sup>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><a href="/wiki/TunnelBear" title="TunnelBear">TunnelBear</a>
+                                </th>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-tunnelbear-dns_77-1" class="reference"><a
+                                            href="#cite_note-tunnelbear-dns-77">[72]</a></sup>
+                                </td>
+                                <td>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-tunnelbear-encryption_153-0" class="reference"><a
+                                            href="#cite_note-tunnelbear-encryption-153">[142]</a></sup><sup
+                                        id="cite_ref-pcmag-tunnelbear-review_74-2" class="reference"><a
+                                            href="#cite_note-pcmag-tunnelbear-review-74">[69]</a></sup>
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-tunnelbear-ghostbear_154-0" class="reference"><a
+                                            href="#cite_note-tunnelbear-ghostbear-154">[143]</a></sup><sup
+                                        id="cite_ref-techradar-tunnelbear_75-2" class="reference"><a
+                                            href="#cite_note-techradar-tunnelbear-75">[70]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    No<sup id="cite_ref-tunnelbear-smtp_155-0" class="reference"><a
+                                            href="#cite_note-tunnelbear-smtp-155">[144]</a></sup>
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">
+                                    Yes<sup id="cite_ref-tunnelbear-p2p_156-0" class="reference"><a
+                                            href="#cite_note-tunnelbear-p2p-156">[145]</a></sup><sup
+                                        id="cite_ref-pcworld-tunnelbear-review_73-3" class="reference"><a
+                                            href="#cite_note-pcworld-tunnelbear-review-73">[68]</a></sup><sup
+                                        id="cite_ref-pcmag-tunnelbear-review_74-3" class="reference"><a
+                                            href="#cite_note-pcmag-tunnelbear-review-74">[69]</a></sup>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td><a href="/wiki/Advanced_Encryption_Standard"
+                                        title="Advanced Encryption Standard">AES-128</a> (<a
+                                        href="/wiki/Block_cipher_mode_of_operation#Cipher_block_chaining"
+                                        title="Block cipher mode of operation">CBC</a>)<sup
+                                        id="cite_ref-tunnelbear-aes_157-0" class="reference"><a
+                                            href="#cite_note-tunnelbear-aes-157">[d]</a></sup>
+                                </td>
+                                <td><a href="/wiki/Advanced_Encryption_Standard"
+                                        title="Advanced Encryption Standard">AES-256</a> (<a
+                                        href="/wiki/Block_cipher_mode_of_operation#Cipher_block_chaining"
+                                        title="Block cipher mode of operation">CBC</a>)<sup
+                                        id="cite_ref-tunnelbear-encryption_153-2" class="reference"><a
+                                            href="#cite_note-tunnelbear-encryption-153">[142]</a></sup>
+                                </td>
+                                <td>1548 bit Diffie-Hellman group<sup id="cite_ref-tunnelbear-handshake_158-0"
+                                        class="reference"><a href="#cite_note-tunnelbear-handshake-158">[e]</a></sup>
+                                </td>
+                                <td>4096 bit Diffie-Hellman group<sup id="cite_ref-tunnelbear-encryption_153-4"
+                                        class="reference"><a href="#cite_note-tunnelbear-encryption-153">[142]</a></sup>
+                                </td>
+                                <td><a href="/wiki/SHA-1" title="SHA-1">SHA-1</a><sup
+                                        id="cite_ref-tunnelbear-data-auth_159-0" class="reference"><a
+                                            href="#cite_note-tunnelbear-data-auth-159">[f]</a></sup>
+                                </td>
+                                <td><a href="/wiki/SHA-2" title="SHA-2">SHA-2</a>56<sup
+                                        id="cite_ref-tunnelbear-encryption_153-6" class="reference"><a
+                                            href="#cite_note-tunnelbear-encryption-153">[142]</a></sup>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><a href="/wiki/VPN.ht" class="mw-redirect" title="VPN.ht">VPN.ht</a>
+                                </th>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-vpnht-dns_160-0" class="reference"><a
+                                            href="#cite_note-vpnht-dns-160">[146]</a></sup>
+                                </td>
+                                <td>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-vpnht-software_161-0" class="reference"><a
+                                            href="#cite_note-vpnht-software-161">[147]</a></sup>
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    No<sup id="cite_ref-vpnht-p2p_162-0" class="reference"><a
+                                            href="#cite_note-vpnht-p2p-162">[148]</a></sup>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td><a href="/wiki/Advanced_Encryption_Standard"
+                                        title="Advanced Encryption Standard">AES-256</a>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><a href="/wiki/VPNBook" title="VPNBook">VPNBook</a>
+                                </th>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-vpnbook-openvpn_163-0" class="reference"><a
+                                            href="#cite_note-vpnbook-openvpn-163">[149]</a></sup>
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Yes<sup id="cite_ref-vpnbook-ports_164-0" class="reference"><a
+                                            href="#cite_note-vpnbook-ports-164">[150]</a></sup>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td style="background: #FFD; color: black; vertical-align: middle; text-align: center;"
+                                    class="partial table-partial">Some<sup id="cite_ref-vpnbook-home_165-0"
+                                        class="reference"><a href="#cite_note-vpnbook-home-165">[151]</a></sup>
+                                </td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">
+                                    Dedicated<sup id="cite_ref-vpnbook-features_166-0" class="reference"><a
+                                            href="#cite_note-vpnbook-features-166">[152]</a></sup>
+                                </td>
+                                <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot></tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

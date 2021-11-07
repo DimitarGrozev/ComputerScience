@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="types.css">
+    <title>Сигурност</title>
+</head>
+
+<body>
+    <nav id="navigationBar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">VPN</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Начало <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Услуги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="security.html">Сигурност</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                    <label id="toggleLabel" class="custom-control-label" style="color: white;"
+                        for="customSwitch1">Toggle light mode</label>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header bg-dark">
+                        <h5 style="color:white"> Основи на сигурността </h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">VPN мрежите не могат да направят онлайн връзките напълно анонимни, но
+                            обикновено могат да увеличат поверителността и сигурността. За да предотвратят разкриването
+                            на лична информация, VPN обикновено позволяват само удостоверен отдалечен достъп,
+                            използвайки протоколи за тунелиране и техники за криптиране.
+
+                            Моделът за сигурност на VPN осигурява:
+                        <ul>
+                            <li>конфиденциалност, така че дори ако мрежовият трафик се подслушва на ниво пакет (вижте
+                                мрежов
+                                анализатор и дълбока проверка на пакети), нападателят ще види само криптирани данни
+                            </li>
+                            <li>удостоверяване на подателя, за да предотвратите достъп на неоторизирани потребители до
+                                VPN
+                            </li>
+                            <li>цялост на съобщението с цел откриване на всякакви случаи на подправяне на предаваните
+                                съобщения.
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="d-flex flex-column align-content-center mt-5 mb-5">
+                    <img src="security.png" alt="vpn" width="500" height="340">
+                    <label><i>Фазите на жизнения цикъл на IPSec тунел във виртуална частна мрежа.</i></label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-dark">
+                        <h5 style="color:white"> Аутентикация </h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Крайните точки на тунела трябва да бъдат удостоверени, преди да могат да се установят
+                            защитени VPN тунели. Създадените от потребителя VPN мрежи за отдалечен достъп могат да
+                            използват пароли, биометрични данни, двуфакторно удостоверяване или други криптографски
+                            методи. Тунелите от мрежа към мрежа често използват пароли или цифрови сертификати. Те
+                            постоянно съхраняват ключа, за да позволят на тунела да се установи автоматично, без намеса
+                            на администратора.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
