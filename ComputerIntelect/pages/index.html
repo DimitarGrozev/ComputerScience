@@ -2,20 +2,18 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../css/index.css">
     <title>Начало</title>
 </head>
 
 <body>
     <nav id="navigationBar" class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">VPN</a>
+        <a class="navbar-brand" href="index.html">VPN</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -33,13 +31,6 @@
                     <a class="nav-link" href="security.html">Сигурност</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                    <label id="toggleLabel" class="custom-control-label" style="color: white;"
-                        for="customSwitch1">Toggle light mode</label>
-                </div>
-            </form>
         </div>
     </nav>
 
@@ -51,6 +42,14 @@
                         <h5 style="color:white"> Какво е VPN ?</h5>
                     </div>
                     <div class="card-body">
+                        <p>
+                            Светът се промени много през последните няколко десетилетия. Вместо просто да се занимават с
+                            местни или регионални проблеми, много фирми сега трябва да мислят за глобалните пазари и
+                            логистика. Много компании имат съоръжения, разположени в цялата страна или дори по целия
+                            свят. Но има едно нещо, от което всички компании се нуждаят: начин да поддържат бързи,
+                            сигурни и надеждни комуникации, където и да се намират офисите им. Тук идва и ролята на
+                            VPN-a.
+                        </p>
                         <p class="card-text">VPN - на български виртуална частна мрежа - е важен инструмент за защита на
                             вашата поверителност онлайн. Без VPN
                             вашата интернет активност може лесно да бъде прихваната и гледана от други хора. Това
@@ -78,23 +77,26 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="d-flex justify-content-center mt-5">
-                    <img src="map-4636843_1920.jpg" alt="vpn" width="540" height="340">
-                </div>
-            </div>
+
+        <div class="link-group">
+            <a href="types.html" class="btn btn-secondary">Типове</a>
+            <a href="routes.html" class="btn btn-secondary">Рутиране</a>
+            <a href="protocols.html" class="btn btn-secondary">Протоколи</a>
         </div>
     </div>
 
-    <div class="link-group">
-        <a href="types.html" class="btn btn-outline-primary" >Типове</a>
-        <a href="routes.html" class="btn btn-outline-primary">Рутиране</a>
-    </div>
+    <footer style=" width: 100%;
+    background-color: #343a40!important;
+    color: white;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    ">
+        <div class="footer-copyright text-center py-3">© 2021 Димитър Грозев
+        </div>
+    </footer>
 
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -104,7 +106,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+
 </body>
 
 </html>
