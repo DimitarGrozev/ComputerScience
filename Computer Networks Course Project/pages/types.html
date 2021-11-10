@@ -27,8 +27,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="services.html">Услуги</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="security.html">Сигурност</a>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="types.html">Реализация</a>
                 </li>
             </ul>
         </div>
@@ -39,7 +40,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header bg-dark">
-                        <h5 style="color:white">Типове VPN</h5>
+                        <h5 style="color:white">Начини за реализация на VPN</h5>
                     </div>
                     <div class="card-body">
                         <p class="card-text">Виртуалните частни мрежи могат да бъдат класифицирани в няколко категории:
@@ -71,21 +72,35 @@
                             бъдат комбинирани, за да се даде възможност за отдалечен достъп до ресурси, разположени на
                             всеки даден сайт, като например система за поръчки, която се намира в център за данни.
                         </p>
+                        <h5>Връзка от точка до сайт</h5>
+                        <p>
+                            Връзката с VPN от точка до сайт (P2S) ви позволява да създадете защитена връзка с
+                            вашата виртуална мрежа от отделен клиентски компютър. P2S връзка се установява, като се
+                            стартира от клиентския компютър. Това решение е полезно за работещи от разстояние, които
+                            искат да се свържат с Azure VNets от отдалечено място, като например от дома или
+                            конференция. P2S VPN също е полезно решение за използване вместо S2S VPN, когато имате само
+                            няколко клиента, които трябва да се свържат към VNet. Важно е да се отбележи, че тази опция
+                            е достъпна през платформата на Мicrosoft за облачен достъп наречена Azure.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="link-group">
-        <a href="index.html" class="btn btn-outline-primary" role="button" aria-pressed="true">Назад</a>
-        <a href="advantages.html" class="btn btn-outline-primary" role="button" aria-pressed="true">Предимства</a>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <img src="../images/types.png" alt="Types" width="500" height="340">
+                <img src="../images/point-to-site.jpg" alt="Types" width="500" height="340">
+            </div>
+        </div>
     </div>
 
     <footer style=" width: 100%;
     background-color: #343a40!important;
     color: white;
-    position:absolute;
+    position:relative;
     bottom: 0;
     left: 0;
     right: 0;
