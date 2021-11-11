@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/types.css">
+    <title>Рутиране</title>
+</head>
+
+<body>
+    <nav id="navigationBar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">VPN</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Начало <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Услуги</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="types.html">Реализация</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-dark">
+                        <h5 style="color:white"> Начини на рутиране </h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Протоколите за тунелиране могат да работят в мрежова топология от точка до
+                            точка, която теоретично не би се считала за VPN, тъй като се очаква VPN по дефиниция да
+                            поддържа произволни и променящи се набори от мрежови възли. Но тъй като повечето реализации
+                            на рутери поддържат софтуерно дефиниран тунелен интерфейс, предоставените от клиента VPN
+                            често са просто дефинирани тунели, работещи с конвенционални протоколи за маршрутизиране.
+
+                            В зависимост от това дали предоставена от доставчика VPN (PPVPN) работи в слой 2 или слой 3,
+                            градивните блокове, описани по-долу, могат да бъдат само L2, само L3 или комбинация от
+                            двете. Функционалността за превключване на етикети с множество протоколи (MPLS) размива
+                            идентичността L2-L3.
+
+                        <h5>Клиентски (C) устройства</h5>
+                        <p>Устройство, което е в мрежата на клиента и не е свързано директно към мрежата на доставчика
+                            на услуги.
+                        </p>
+
+                        <h5>Устройство Customer Edge (CE)</h5>
+                        <p> Устройство в края на мрежата на клиента, което осигурява достъп до PPVPN. Понякога това е
+                            само демаркационна точка между отговорността на доставчика и клиента. Други доставчици
+                            позволяват на клиентите да го конфигурират.</p>
+
+                        <h5>Крайно устройство на доставчика (PE) </h5>
+                        <p> Устройство или набор от устройства в ръба на мрежата на доставчика, който се свързва с
+                            клиентски мрежи чрез CE устройства и представя изгледа на доставчика за сайта на клиента. PE
+                            са наясно с VPN мрежите, които се свързват чрез тях, и поддържат VPN състояние.</p>
+
+                        <h5> Устройство на доставчика (P) </h5>
+                        <p> Устройство, което работи в основната мрежа на доставчика и не се свързва директно с никоя
+                            клиентска крайна точка. Може например да осигури маршрутизиране за много тунели, управлявани
+                            от доставчика, които принадлежат на PPVPN на различни клиенти. Въпреки че P устройството е
+                            ключова част от внедряването на PPVPN, то само по себе си не е наясно с VPN и не поддържа
+                            VPN състояние. Неговата основна роля е да позволи на доставчика на услуги да мащабира своите
+                            PPVPN предложения, например, като действа като точка за агрегиране за множество PE. P-to-P
+                            връзките в такава роля често са оптични връзки с голям капацитет между основните
+                            местоположения на доставчиците.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="d-flex justify-content-center mt-5 mb-5">
+                    <img src="../images/routes.png" alt="vpn" width="500" height="340">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="link-group">
+        <a href="index.html" class="btn btn-outline-primary" role="button" aria-pressed="true">Назад</a>
+    </div>
+
+    <footer style=" width: 100%;
+    background-color: #343a40!important;
+    color: white;
+    position:relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    ">
+        <div class="footer-copyright text-center py-3">© 2021 Димитър Грозев
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
